@@ -14,20 +14,24 @@ class Home extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      body: SingleChildScrollView(
+      //appBar: AppBar(),
+      body: Expanded(
         child: Column(
           children: [
 
+            SizedBox(height: 20,),
 
-            Container(
-              width: MediaQuery.of(context).size.width,
-              height: MediaQuery.of(context).size.height,
+            SingleChildScrollView(
+              child: Container(
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height-25,
 
-              child:  WebView(
-                zoomEnabled: true,
-                initialUrl: "https://palashjewellery.com/",
-                javascriptMode: JavascriptMode.unrestricted,
-              ) ,
+                child:  WebView(
+                  zoomEnabled: true,
+                  initialUrl: "https://palashjewellery.com/",
+                  javascriptMode: JavascriptMode.unrestricted,
+                ) ,
+              ),
             ),
 
           ],
