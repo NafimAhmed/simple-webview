@@ -25,8 +25,8 @@ class Home extends StatelessWidget{
 
               child:  WebView(
                 zoomEnabled: true,
-                initialUrl: "https://en.wikipedia.org/wiki/Dublin",
-               // javascriptMode: JavascriptMode.unrestricted,
+                initialUrl: "https://palashjewellery.com/",
+                javascriptMode: JavascriptMode.unrestricted,
               ) ,
             ),
 
